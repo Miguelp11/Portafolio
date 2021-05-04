@@ -10,28 +10,37 @@
 </head>
 <body>
     <!-- Seccion navegacion -->
-    <header>
-        <nav>
-            <ul>
-                <li>Portafolio</li>
-                <li>Habilidades</li>
-                <li>Experiencia</li>
-                <li>Contacto</li>
+    <header >
+        <nav class="navegacion">
+            <div class="menu-hamburguesa">
+                <i class="fas fa-bars" id="menu-hamburguesa"></i>
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                    <span class="eslogan">Miguel Ponce </span>
+                </div>
+            </div>
+            <ul class="menu " id="menu">
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Experiencia</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
         <!-- Seccion banner -->
     <section class="banner">
-        <div>
-            <p>Miguel Ponce</p>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github"></i>
+        <div class="contenido">
+            <p>Miguel Angel Ponce Garay</p>
+            <div class="division"></div>
+            <p class="titulo">Desarrollador web</p>
+            <a href=""><i class="fab fa-linkedin"></i></a> 
+            <a href=""><i class="fab fa-github"></i></a> 
         </div>
     </section>
 
     <!-- Seccion portafolio -->
-    <section class="portafolio">
+    <section class="portafolio" id="portafolio">
         <h2>Portafolio</h2>
         <div class="division"></div>
     </section>
@@ -60,5 +69,6 @@
         document.write(d.getFullYear())</script>. Todos los derechos reservados.</p>
         
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

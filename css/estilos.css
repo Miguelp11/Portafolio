@@ -1,0 +1,115 @@
+/* Importando fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Estilos generales */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/* Seccion navegacion */
+.navegacion{
+    position: fixed;    
+}
+.menu{
+    background-color: #0563BB;
+    margin-top: -2px;
+    text-align: center;
+    transition: max-height .4s linear;
+    overflow: hidden;
+    max-height: 0;
+}
+.menu-mostrar{
+    max-height: 165px;
+}
+.menu li{
+    list-style: none;
+    border-bottom: 1px solid #E68945;
+    padding: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7rem;
+}
+.menu-hamburguesa{
+    display: flex;
+    background-color: #0563BB;
+    font-size: 2.5rem;
+    color: #fff;
+    width: 100vw;
+}
+.logo{
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: right;
+}
+.eslogan{
+    font-size: 1.4rem;
+    color: #000;
+}
+.fa-bars{
+    margin: 10px 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #222;
+}
+.fa-laptop-code{
+    color: #E68945;
+}
+
+/* Seccion banner */
+.banner{
+    display: grid;
+    height: 100vh;
+    background-image: linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(/img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.contenido {
+    grid-column: 1/6;
+    grid-row: 3/5;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.contenido .fab{
+    font-size: 2.9rem;
+    margin-right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.contenido .fa-linkedin:hover{
+    color: #0A66C2;
+}
+.contenido .fa-github:hover{
+    color: #F05134;
+}
+.contenido a{
+    text-decoration: none;
+}
+.division{
+    background-color: #0563BB;
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+}
+.titulo{
+    margin-bottom: 15px;
+}
