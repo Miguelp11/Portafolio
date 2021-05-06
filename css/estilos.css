@@ -20,7 +20,8 @@ img{
 
 /* Seccion navegacion */
 .navegacion{
-    position: fixed;    
+    position: fixed;
+    z-index: 100;    
 }
 .menu{
     background-color: #0563BB;
@@ -49,6 +50,7 @@ img{
     font-size: 2.5rem;
     color: #fff;
     width: 100vw;
+    box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.76);
 }
 .logo{
     padding: 10px;
@@ -112,4 +114,54 @@ img{
 }
 .titulo{
     margin-bottom: 15px;
+}
+.titulo-seccion{
+    text-align: center;
+}
+
+/* Seccion portafolio */
+.portafolio1{
+    margin-top: 20px;
+}
+.portafolio{
+    display: grid;
+}
+.portafolio-img{
+    position: relative;
+    opacity: 1;
+    margin: 20px auto;
+    max-width: 350px;
+    max-height: 350px;
+    transition: .5s all;
+    backface-visibility: hidden;
+    z-index: 50;
+}
+.img-portafolio{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.7);
+    border: 1px solid #4e4e4e;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    transition: .2s all;
+}
+.portafolio-info{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: .8s all;
+    opacity: 0;
+}
+.portafolio-img:hover .portafolio-info{
+    opacity: 1;
+}
+.portafolio-img:hover .img-portafolio{
+    opacity: .5;
+    filter: blur(2.5px);
+    -webkit-filter: blur(2.5px);
+    transition: .2s all;
 }
