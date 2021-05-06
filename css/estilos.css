@@ -117,14 +117,17 @@ img{
 }
 .titulo-seccion{
     text-align: center;
+    font-size: 1.8rem;
 }
 
 /* Seccion portafolio */
 .portafolio1{
-    margin-top: 20px;
+    padding: 50px 0px;
+    background-color: #F1F6F8;
 }
 .portafolio{
     display: grid;
+    margin-top: 20px;
 }
 .portafolio-img{
     position: relative;
@@ -241,4 +244,73 @@ img{
 }
 .abrir-modal{
     display: block;
+}
+
+/* Seccion habilidades */
+.habilidades{
+    background-color: #0563BB;
+    padding: 50px 0px;
+}
+.titulo-seccion-blanco{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #F5F0ED;
+}
+.division-blanco{
+    background-color: #fff;
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+}
+.contenedor-habilidades{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 30px;
+    margin-top: 40px;
+}
+.item{
+    text-align: center;
+    color: #F5F0ED;
+    font-size: 1.2rem;
+}
+.item1, .item4, .item7{
+    grid-column: 1/5;
+}
+.item2, .item5{
+    grid-column: 5/9;
+}
+.item3, .item6{
+    grid-column: 9/13;
+}
+.icono{
+    width: 100px;
+    height: 100px;
+}
+
+/* Seccion experiencia */
+.experiencia{
+    padding: 50px 0px;
+    background-color: #F1F6F8;
+}
+.contenedor-experiencia{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 30px;
+    margin-top: 40px;
+}
+.item-experiencia{
+    grid-column: 1/13;
+    text-align: center;
+}
+.img-experiencia{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 4px solid #0563BB;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s all;
+}
+.img-experiencia:hover{
+    border-radius: 0px;
 }
