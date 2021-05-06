@@ -44,13 +44,13 @@
         <h2 class="titulo-seccion">Portafolio</h2>
         <div class="division"></div>
         <div class="portafolio">
-            <div class="portafolio-img">
-                <img src="img/appmetro.png" alt="aplicacion-metro" class="img-portafolio">
+            <div class="portafolio-img" id="proyecto1">
+                <img src="img/appmetro.png" alt="aplicacion-metro" class="img-portafolio" >
                 <div class="portafolio-info">
                     <p>Aplicacion Web Material Rodante</p>                
                 </div>
             </div>
-            <div class="portafolio-img">
+            <div class="portafolio-img" id="proyecto2">
                 <img src="img/axolotl.png" alt="pagina-axolotl" class="img-portafolio">
                 <div class="portafolio-info">
                     <p>Sitio Web Informativo "Axolotl"</p>                
@@ -77,11 +77,55 @@
         <div class="division"></div>
     </section>
 
+    <!-- Modal portafolio -->
+    <div class="modal-portafolio" id="modal-portafolio">
+        <div class="modal-contenido">
+                <div class="img-info">
+                    <img src="img/appmetro.png" class="modal_img">
+                </div>
+                <div class="detalles-proyecto">
+                    <h2>Información del proyecto</h2>
+                    <div class="division"></div>
+                    <p>Categoria: <span>Aplicación Web</span></p>
+                    <p>Cliente: <span>Dirección de Material Rodante S.T.C</span></p>
+                    <p>Fecha del proyecto: <span>Junio 2020</span></p>
+                    <p>URL: <span>---</span></p>
+                </div>
+                <div class="descripcion-proyecto">
+                    <h2>Detalles del Proyecto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut cupiditate rerum, doloribus sunt soluta laudantium architecto sequi earum corporis, itaque rem quibusdam quae illum dicta velit nulla at praesentium?</p>
+                </div>
+        </div>
+        <div class="cerrar-modal" id="cerrar-modal">
+            X
+        </div>
+    </div>
+    <div class="modal-portafolio" id="modal-portafolio1">
+        <div class="modal-contenido">
+                <div class="img-info">
+                    <img src="img/axolotl.png" class="modal_img">
+                </div>
+                <div class="detalles-proyecto">
+                    <h2>Información del proyecto</h2>
+                    <div class="division"></div>
+                    <p>Categoria: <span>Sitio Web</span></p>
+                    <p>Cliente: <span>Actividad Personal</span></p>
+                    <p>Fecha del proyecto: <span>Enero 2021</span></p>
+                    <p>URL: <span>---</span></p>
+                </div>
+                <div class="descripcion-proyecto">
+                    <h2>Detalles del Proyecto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut cupiditate rerum, doloribus sunt soluta laudantium architecto sequi earum corporis, itaque rem quibusdam quae illum dicta velit nulla at praesentium?</p>
+                </div>
+        </div>
+        <div class="cerrar-modal" id="cerrar-modal1">
+            X
+        </div>
+    </div>
+
     <!-- Pie de pagina -->
     <footer class="pie-pagina">
-        <p>Desarrollado por Miguel Ponce.&copy;<script type="text/javascript">var d = new Date()
-        document.write(d.getFullYear())</script>. Todos los derechos reservados.</p>
-        
+        <p>Desarrollado por Miguel Ponce.&copy; 2021. Todos los derechos reservados.</p>
     </footer>
     <script src="js/script.js"></script>
 </body>
