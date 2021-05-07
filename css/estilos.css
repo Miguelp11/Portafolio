@@ -141,8 +141,8 @@ img{
     cursor: pointer;
 }
 .portafolio-img figure{
-    width: 320px;
-    height: 320px;
+    width: 260px;
+    height: 260px;
     overflow: hidden;
     transition: .5s all;
     box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
@@ -288,8 +288,8 @@ img{
     grid-column: 9/13;
 }
 .icono{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 /* Seccion experiencia */
@@ -331,6 +331,20 @@ img{
 }
 .contenedor-contacto{
     margin-top: 40px;
+    text-align: center;
+}
+.contenedor-contacto .fab{
+    font-size: 2.9rem;
+    margin-right: 10px;
+    margin-top: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.contenedor-contacto .fa-linkedin:hover{
+    color: #35BED9;
+}
+.contenedor-contacto .fa-github:hover{
+    color: #F05134;
 }
 form{
     width: 100%;
