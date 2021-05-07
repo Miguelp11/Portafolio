@@ -49,7 +49,7 @@
                     <img src="img/appmetro.png" alt="aplicacion-metro" class="img-portafolio" >
                 </figure>                
                 <div class="portafolio-info">
-                    <p>Aplicacion Web Material Rodante</p>                
+                    <p>Aplicacion Web "STC Metro"</p>                
                 </div>
             </div>
             <div class="portafolio-img" id="proyecto2">
@@ -57,7 +57,7 @@
                     <img src="img/axolotl.png" alt="pagina-axolotl" class="img-portafolio">
                 </figure>
                 <div class="portafolio-info">
-                    <p>Sitio Web Informativo "Axolotl"</p>                
+                    <p>Sitio Web "Axolotl"</p>                
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
             </div>
             <div class="item item3">
                 <img src="img/javascript.svg" alt="javascript" class="icono">
-                <p>Java</p>
+                <p>JavaScript</p>
             </div>
             <div class="item item4">
                 <img src="img/git.svg" alt="git" class="icono">
@@ -105,11 +105,11 @@
         <div class="division"></div>
         <div class="contenedor-experiencia">
             <div class="item-experiencia">
-                <img src="img/metro.png" alt="stcMetro" class="img-experiencia">
+                <a href="pdf/CV-Miguel-Ponce.pdf" target="_blank"><img src="img/metro.png" alt="stcMetro" title="Ver CV" class="img-experiencia"></a> 
                 <p>S.T.C Metro</p>
             </div>
             <div class="item-experiencia">
-                <img src="img/ah.jpg" alt="animalHeroes" class="img-experiencia">
+                <img src="img/ah.jpg" alt="animalHeroes" title="Ver CV" class="img-experiencia">
                 <p>Animal Heroes</p>
             </div>
         </div>
@@ -117,8 +117,19 @@
 
     <!-- Seccion contacto -->
     <section class="contacto">
-        <h2 class="titulo-seccion">Contacto</h2>
-        <div class="division"></div>
+        <h2 class="titulo-seccion-blanco">Contacto</h2>
+        <div class="division-blanco"></div>
+        <div class="contenedor-contacto">
+            <form action="" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" maxlength="30" required>
+                <label for="correo">Correo </label>
+                <input type="email" name="correo" id="correo" placeholder="Escribe tu correo" maxlength="40" required>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe el mensaje" required></textarea>
+                <input type="submit" value="Enviar" class="boton">
+            </form>
+        </div>
     </section>
 
     <!-- Modal portafolio -->
@@ -169,7 +180,7 @@
 
     <!-- Pie de pagina -->
     <footer class="pie-pagina">
-        <p>Desarrollado por Miguel Ponce.&copy; 2021. Todos los derechos reservados.</p>
+        <p>Desarrollado por <a href="mailto:miguel_p1194@hotmail.com">Miguel Ponce</a>. &copy; 2021. <span>Todos los derechos reservados.</span> </p>
     </footer>
     <script src="js/script.js"></script>
 </body>

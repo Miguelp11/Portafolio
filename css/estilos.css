@@ -118,6 +118,8 @@ img{
 .titulo-seccion{
     text-align: center;
     font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* Seccion portafolio */
@@ -145,6 +147,7 @@ img{
     transition: .5s all;
     box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
     border: 1px solid #222;
+    max-width: 420px;
 }
 .img-portafolio{
     position: relative;
@@ -159,7 +162,7 @@ img{
 .portafolio-info{
     position: absolute;
     top: 45%;
-    left: 20%;
+    left: 25%;
     color: #000;
     font-size: 1.4rem;
     font-weight: bold;
@@ -255,6 +258,8 @@ img{
     text-align: center;
     font-size: 1.8rem;
     color: #F5F0ED;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 .division-blanco{
     background-color: #fff;
@@ -302,15 +307,88 @@ img{
     grid-column: 1/13;
     text-align: center;
 }
+.item-experiencia p{
+    color: #4b4c4d;
+    font-size: 1.2rem;
+}
 .img-experiencia{
     width: 150px;
     height: 150px;
     background-color: #fff;
-    border: 4px solid #0563BB;
+    border: 5px solid #0563BB;
     border-radius: 20px;
     cursor: pointer;
     transition: .5s all;
 }
 .img-experiencia:hover{
     border-radius: 0px;
+}
+
+/* Seccion contacto */
+.contacto{
+    background-color: #0563BB;
+    padding: 50px 0px;
+}
+.contenedor-contacto{
+    margin-top: 40px;
+}
+form{
+    width: 100%;
+    text-align: center;
+}
+input[type="text"]{
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 40px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+input[type="email"],textarea{
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+label{
+    display: block;
+    color: #F1F6F8;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+form .boton{
+    display: block;
+    background-color: #FE8228;
+    border: none;
+    color: #F1F6F8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px auto 0px auto;
+    cursor: pointer;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Pie de pagina */
+.pie-pagina{
+    background-color: #2C2D2D;
+    padding: 20px 0px;
+    text-align: center;
+    color: #F5F0ED;
+    font-size: 1.2rem;
+}
+.pie-pagina a{
+    color: #2f699c;
+    text-decoration: none;
+}
+.pie-pagina a:hover{
+    color: #2a5d8a;
+    text-decoration: underline;
+}
+.pie-pagina span{
+    display: none;
 }
