@@ -16,15 +16,21 @@
                 <i class="fas fa-bars" id="menu-hamburguesa"></i>
                 <div class="logo">
                     <i class="fas fa-laptop-code"></i>
-                    <span class="eslogan">Miguel Ponce </span>
+                    <!-- <span class="eslogan">Miguel Ponce </span> -->
                 </div>
             </div>
-            <ul class="menu " id="menu">
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+            <div class="menu-xl">
+                <ul class="menu " id="menu">
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#habilidades" >Habilidades</a></li>
+                    <li><a href="#experiencia" >Experiencia</a></li>
+                    <li><a href="#contacto" >Contacto</a></li>
+                </ul>
+                <div class="logo1">
+                    <i class="fas fa-laptop-code"></i>
+                    <!-- <span class="eslogan">Miguel Ponce </span> -->
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -44,7 +50,7 @@
         <h2 class="titulo-seccion">Portafolio</h2>
         <div class="division"></div>
         <div class="portafolio">
-            <div class="portafolio-img" id="proyecto1">
+            <div class="portafolio-img portafolio-1" id="proyecto1">
                 <figure>
                     <img src="img/appmetro.png" alt="aplicacion-metro" class="img-portafolio" >
                 </figure>                
@@ -52,7 +58,7 @@
                     <p>Aplicacion Web "STC"</p>                
                 </div>
             </div>
-            <div class="portafolio-img" id="proyecto2">
+            <div class="portafolio-img portafolio-2" id="proyecto2">
                 <figure>
                     <img src="img/axolotl.png" alt="pagina-axolotl" class="img-portafolio">
                 </figure>
@@ -64,7 +70,7 @@
     </section>
 
     <!-- Seccion habilidades -->
-    <section class="habilidades">
+    <section class="habilidades" id="habilidades">
         <h2 class="titulo-seccion-blanco">Habilidades</h2>
         <div class="division-blanco"></div>
         <div class="contenedor-habilidades">
@@ -100,15 +106,15 @@
     </section>
 
     <!-- Seccion experiencia -->
-    <section class="experiencia">
+    <section class="experiencia" id="experiencia">
         <h2 class="titulo-seccion">Experiencia</h2>
         <div class="division"></div>
         <div class="contenedor-experiencia">
-            <div class="item-experiencia">
+            <div class="item-experiencia item-experiencia1">
                 <a href="pdf/CV-Miguel-Ponce.pdf" target="_blank"><img src="img/metro.png" alt="stcMetro" title="Ver CV" class="img-experiencia"></a> 
                 <p>S.T.C Metro</p>
             </div>
-            <div class="item-experiencia">
+            <div class="item-experiencia item-experiencia2">
                 <img src="img/ah.jpg" alt="animalHeroes" title="Ver CV" class="img-experiencia">
                 <p>Animal Heroes</p>
             </div>
@@ -116,7 +122,7 @@
     </section>
 
     <!-- Seccion contacto -->
-    <section class="contacto">
+    <section class="contacto" id="contacto">
         <h2 class="titulo-seccion-blanco">Contacto</h2>
         <div class="division-blanco"></div>
         <div class="contenedor-contacto">
@@ -126,7 +132,7 @@
                 <label for="correo">Correo </label>
                 <input type="email" name="correo" id="correo" placeholder="Escribe tu correo" maxlength="40" required>
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe el mensaje" required></textarea>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe el mensaje"   maxlength="200" required></textarea>
                 <input type="submit" value="Enviar" class="boton">
             </form>
             <a href=""><i class="fab fa-linkedin"></i></a> 
