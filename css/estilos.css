@@ -202,45 +202,48 @@ img{
     display: none;
 }
 .modal-contenido{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     height: 90vh;
     width: 90vw;
     background-color: #ebebeb;
     margin: 30px auto;
     overflow: scroll;
     border-radius: 5px;
+
 }
 .img-info{
-    grid-column: 1/13;
-    margin: 20px 30px;
+    margin: 20px 30px 0px 30px;
 }
 .detalles-proyecto{
-    grid-column: 1/13;
-    margin: -70px 30px 0px 30px;
+    margin: 20px 30px 10px 30px;
     background-color: #fff;
-    height: 150px;
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.detalles-proyecto h2, .descripcion-proyecto h2{
+.detalles-proyecto h2{
     text-align: center;
     text-transform: uppercase;
-    margin: 10px 0;
     font-size: 1.4rem;
+    margin: 10px 0px;
 }
-.detalles-proyecto p{
+.cat{
     font-weight: bold;
     font-size: 1.2rem;
 }
-.detalles-proyecto span{
-    font-style: italic;
+.cat span{
     font-weight: normal;
 }
-.descripcion-proyecto{
+.descripcion{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+/* .descripcion-proyecto{
     grid-column: 1/13;
     margin: -50px 30px 10px 30px;
     font-size: 1.2rem;
-}
+} */
 .cerrar-modal{
     position: absolute;
 	top: 5px;
@@ -301,6 +304,7 @@ img{
 .icono{
     width: 80px;
     height: 80px;
+    border-radius: 10px;
 }
 
 /* Seccion experiencia */
@@ -448,6 +452,13 @@ form .boton{
     .contenido p:nth-child(1){
         font-size: 2.3rem;
     }
+    .portafolio-img figure{
+        width: 420px;
+        height: 420px;
+    }
+    .portafolio-info{
+        font-size: 1.8rem;
+    }
     .icono{
         width: 100px;
         height: 100px;
@@ -458,12 +469,24 @@ form .boton{
     .item-experiencia p{
         font-size: 1.4rem;
     }
+    .detalles-proyecto h2{
+        font-size: 1.6rem;
+    }
+    .cat{
+        font-size: 1.4rem;
+    }
+    .descripcion{
+        font-size: 1.4rem;
+    }
     form{
         width: 430px;
     }
     input[type="text"],input[type="email"],textarea{
         font-size: 1.4rem;
-    }    
+    }
+    .pie-pagina{
+        font-size: 1.4rem;
+    }
 }
 
 @media screen and (min-width:768px){
@@ -471,17 +494,32 @@ form .boton{
         font-size: 3rem;
     }
     .portafolio{
-        grid-template-columns: repeat(12,1fr);
+        grid-template-columns: repeat(11,1fr);
     }
     .portafolio-img figure{
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
+    }
+    .portafolio-info{
+        font-size: 1.4rem;
     }
     .portafolio-1{
-        grid-column: 2/6;
+        grid-column: 2/5;
     }
     .portafolio-2{
-        grid-column: 7/12;
+        grid-column: 5/8;
+    }
+    .portafolio-3{
+        grid-column: 8/11;
+    }
+    .detalles-proyecto h2{
+        font-size: 1.8rem;
+    }
+    .cat{
+        font-size: 1.6rem;
+    }
+    .descripcion{
+        font-size: 1.6rem;
     }
     .item1, .item5{
         grid-column: 2/3;
@@ -510,7 +548,13 @@ form .boton{
     }
     input[type="text"],input[type="email"],textarea{
         height: 50px;
-    }    
+    }
+    .contenedor-contacto .fab{
+        font-size: 3.5rem;
+    }
+    .pie-pagina span{
+        display: initial;
+    } 
 }
 
 @media screen and (min-width:1024px){
@@ -556,10 +600,54 @@ form .boton{
         background-color: #F5F0ED;
         color: #4b4c4d;
     }
+    .contenido p:nth-child(1){
+        font-size: 3.6rem;
+    }
+    .portafolio-img figure{
+        width: 270px;
+        height: 270px;
+    }
+    .portafolio-info{
+        font-size: 1.6rem;
+    }
+    .modal-contenido{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        height: auto;
+        overflow: initial;
+    }
+    .img-info{
+        grid-column: 1/10;
+    }
+    .detalles-proyecto{
+        grid-column: 10/13;
+        margin: 0;
+    }
+    .detalles-proyecto h2{
+        margin-top: 20px;
+    }
+    .descripcion{
+        padding-top: 10px;
+    }
     .item-experiencia1{
         grid-column: 4/7;
     }
     .item-experiencia2{
         grid-column: 7/10;
+    }
+    form{
+        width: 1000px;
+    }
+    .contenedor-contacto .fab{
+        font-size: 4rem;
+    }
+}
+@media screen and (min-width:1224px){
+    .portafolio-img figure{
+        width: 320px;
+        height: 320px;
+    }
+    .portafolio-info{
+        font-size: 2rem;
     }
 }

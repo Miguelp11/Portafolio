@@ -1,10 +1,17 @@
 // menu
 const menu = document.getElementById("menu");
 const hamburguesa= document.getElementById("menu-hamburguesa");
+const link= document.querySelectorAll('nav ul li a');
 
 hamburguesa.addEventListener("click", ()=>{
     menu.classList.toggle("menu-mostrar");
 });
+
+for (let index = 0; index < link.length; index++) {
+    link[index].addEventListener("click", ()=>{
+        menu.classList.remove("menu-mostrar");
+    });
+}
 
 // modal proyectos
 const modal= document.getElementById('modal-portafolio');
