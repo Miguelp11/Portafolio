@@ -97,12 +97,24 @@ img{
     color: #fff;
     text-align: center;
 }
+.titulo{
+    color: #0A66C2;
+    font-size: 1.4rem;
+}
+.animado{
+    color: #0A66C2;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.social{
+    margin-top: 150px;
+}
 .contenido p:nth-child(1){
     text-transform: uppercase;
     font-size: 1.6rem;
 }
 .contenido .fab{
-    font-size: 2.9rem;
+    font-size: 3rem;
     margin-right: 10px;
     color: #fff;
     cursor: pointer;
@@ -172,8 +184,9 @@ img{
 }
 .portafolio-info{
     position: absolute;
-    top: 45%;
-    left: 25%;
+    width: 100%;
+    top: 50%;
+    text-align: center;
     color: #000;
     font-size: 1.4rem;
     font-weight: bold;
@@ -436,6 +449,15 @@ form .boton{
     .contenido p:nth-child(1){
         font-size: 1.8rem;
     }
+    .titulo{
+        font-size: 1.6rem;
+    }
+    .animado{
+        font-size: 1.6rem;
+    }
+    .contenido .fab{
+        font-size: 3.4rem;
+    }
     .portafolio-img figure{
         width: 320px;
         height: 320px;
@@ -451,6 +473,15 @@ form .boton{
 @media screen and (min-width:480px){
     .contenido p:nth-child(1){
         font-size: 2.3rem;
+    }
+    .titulo{
+        font-size: 2.1rem;
+    }
+    .animado{
+        font-size: 2.1rem;
+    }
+    .contenido .fab{
+        font-size: 3.8rem;
     }
     .portafolio-img figure{
         width: 420px;
@@ -492,6 +523,15 @@ form .boton{
 @media screen and (min-width:768px){
     .contenido p:nth-child(1){
         font-size: 3rem;
+    }
+    .titulo{
+        font-size: 2.8rem;
+    }
+    .animado{
+        font-size: 2.8rem;
+    }
+    .contenido .fab{
+        font-size: 4.2rem;
     }
     .portafolio{
         grid-template-columns: repeat(11,1fr);
@@ -595,6 +635,7 @@ form .boton{
         height: 50px;
         margin-top: 3px;
         padding: 10px 5px 0px 5px;
+        transition: .5s all;
     }
     .menu li a:hover{
         background-color: #F5F0ED;
@@ -602,6 +643,15 @@ form .boton{
     }
     .contenido p:nth-child(1){
         font-size: 3.6rem;
+    }
+    .titulo{
+        font-size: 3.2rem;
+    }
+    .animado{
+        font-size: 3.2rem;
+    }
+    .contenido .fab{
+        font-size: 4.6rem;
     }
     .portafolio-img figure{
         width: 270px;
@@ -618,6 +668,7 @@ form .boton{
     }
     .img-info{
         grid-column: 1/10;
+        margin-bottom: 20px;
     }
     .detalles-proyecto{
         grid-column: 10/13;
@@ -628,6 +679,12 @@ form .boton{
     }
     .descripcion{
         padding-top: 10px;
+    }
+    .item{
+        font-size: 1.4rem;
+    }
+    .item-experiencia p{
+        font-size: 2rem;
     }
     .item-experiencia1{
         grid-column: 4/7;

@@ -13,6 +13,18 @@ for (let index = 0; index < link.length; index++) {
     });
 }
 
+// Animacion
+var typed = new Typed('.animado', {
+    strings: [
+    "Desarrollador web",
+    "Desarrollador Front-End",
+    "Freelance"
+],
+    typeSpeed: 100,
+    backSpedd: 50,
+    loop: true
+ });
+
 // modal proyectos
 const modal= document.getElementById('modal-portafolio');
 const modal1= document.getElementById('modal-portafolio1');
