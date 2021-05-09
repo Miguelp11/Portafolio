@@ -84,7 +84,8 @@ img{
 .banner{
     display: grid;
     height: 100vh;
-    background-image: linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) ), url(/img/banner.jpg);
+    background-image: url(/img/banner.jpg);
+	background-color: linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) );
     background-size: cover;
     background-position: center;
     grid-template-columns: repeat(5, 1fr);
