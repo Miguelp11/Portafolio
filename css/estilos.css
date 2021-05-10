@@ -84,8 +84,8 @@ img{
 .banner{
     display: grid;
     height: 100vh;
-    background-image: url(/img/banner.jpg);
-	background-color: linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) );
+    background-image: url(../img/banner.jpg);
+    background-color: linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) );
     background-color: -moz-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) );
     background-color: -webkit-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) );
     background-color: -ms-linear-gradient(rgba(16,16,16,.8), rgba(16,16,16,.8) );
