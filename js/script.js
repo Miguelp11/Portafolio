@@ -1,3 +1,6 @@
+//inicializar wow
+AOS.init();
+
 // menu
 const menu = document.getElementById("menu");
 const hamburguesa= document.getElementById("menu-hamburguesa");
