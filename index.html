@@ -41,8 +41,8 @@
             <div class="division"></div>
             <p class="titulo"> <span class="animado"></span></p>
             <div class="social">
-                <a href=""><i class="fab fa-linkedin"></i></a> 
-                <a href=""><i class="fab fa-github"></i></a> 
+                <a href="https://www.linkedin.com/in/miguel-ponce/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                <a href="https://github.com/Miguelp11" target="_blank"><i class="fab fa-github"></i></a> 
             </div>
         </div>
     </section>
@@ -85,11 +85,11 @@
         <div class="division-blanco"></div>
         <div class="contenedor-habilidades">
             <div class="item item1">
-                <img src="img/html5.svg" alt="html5" class="icono">
+                <img src="img/html5.svg" alt="html5" class="icono iconohtml5">
                 <p>HTML5</p>
             </div>
             <div class="item item2">
-                <img src="img/css3.svg" alt="css3" class="icono">
+                <img src="img/css3.svg" alt="css3" class="icono iconocss">
                 <p>CSS3</p>
             </div>
             <div class="item item3">
@@ -97,7 +97,7 @@
                 <p>JavaScript</p>
             </div>
             <div class="item item4">
-                <img src="img/git.svg" alt="git" class="icono">
+                <img src="img/git.svg" alt="git" class="icono iconogit">
                 <p>Git / Github</p>
             </div>
             <div class="item item5">
@@ -105,11 +105,11 @@
                 <p>MySQL / SQLServer</p>
             </div>
             <div class="item item6">
-                <img src="img/java.svg" alt="Java" class="icono">
+                <img src="img/java.svg" alt="Java" class="icono iconojava">
                 <p>Java</p>
             </div>
             <div class="item item7">
-                <img src="img/php.svg" alt="php" class="icono">
+                <img src="img/php.svg" alt="php" class="icono iconophp">
                 <p>PHP</p>
             </div>
         </div>
@@ -136,17 +136,18 @@
         <h2 class="titulo-seccion-blanco">Contacto</h2>
         <div class="division-blanco"></div>
         <div class="contenedor-contacto">
-            <form action="php/enviar.php" method="post">
+            <form action="" method="post">
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" maxlength="30" required>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" maxlength="30" disabled required>
                 <label for="correo">Correo </label>
-                <input type="email" name="correo" id="correo" placeholder="Escribe tu correo" maxlength="40" required>
+                <input type="email" name="correo" id="correo" placeholder="Escribe tu correo" maxlength="40" disabled required>
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe el mensaje"   maxlength="200" required></textarea>
-                <input type="submit" value="Enviar" class="boton">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe el mensaje" disabled  maxlength="200" required></textarea>
+                <!-- <input type="submit" value="Enviar" class="boton"> -->
+                <a href="mailto:mailto:miguel_p1194@hotmail.com" class="btn">Enviar correo</a>
             </form>
-            <a href=""><i class="fab fa-linkedin"></i></a> 
-            <a href=""><i class="fab fa-github"></i></a> 
+            <a href="https://www.linkedin.com/in/miguel-ponce/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+            <a href="https://github.com/Miguelp11" target="_blank"><i class="fab fa-github"></i></a> 
         </div>
     </section>
 
@@ -165,7 +166,10 @@
                     <p class="cat">URL: <span>---</span></p>
                     <h2>Detalles del Proyecto</h2>
                     <div class="division"></div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut cupiditate rerum, doloribus sunt soluta laudantium architecto sequi earum corporis, itaque rem quibusdam quae illum dicta velit nulla at praesentium?lo</p>
+                    <p class="descripcion">Aplicación web para gestionar los empleados,
+                        materiales de capacitación (videos y archivos en formato PDF), visor de eventos y creación de reportes PDF en 3 niveles de usuario. <br>
+                        Desarrollado en el lenguaje de programación <strong>PHP</strong> , estructura <strong>HTML</strong>, estilos <strong>CSS</strong> 
+                        y con el gestor de base de datos <strong>MySQL</strong>.</p>
                 </div>
         </div>
         <div class="cerrar-modal" id="cerrar-modal">
@@ -183,19 +187,43 @@
                     <p class="cat">Categoria: <span>Sitio Web</span></p>
                     <p class="cat">Cliente: <span>Actividad Personal</span></p>
                     <p class="cat">Fecha del proyecto: <span>Enero 2021</span></p>
-                    <p class="cat">URL: <span>---</span></p>
+                    <p class="cat">URL: <span><a href="https://axolotle.000webhostapp.com/" target="_blank">Visitar</a></span></p>
                     <h2>Detalles del Proyecto</h2>
                     <div class="division"></div>
-                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut cupiditate rerum, doloribus sunt soluta laudantium architecto sequi earum corporis, itaque rem quibusdam quae illum dicta velit nulla at praesentium?</p>
+                    <p class="descripcion">Sitio web responsvio, informativo sobre un videojuego enfocado en la alcaldia Xochimilco. <br>
+                    Desarrollado con estrucutra <strong>HTML</strong>, <strong>CSS</strong> y <strong>Javascript</strong> uso de librerias animate.css, wow.js para mostrar animaciones y glider.js para creacion de sliders.</p>
+                </div>
+            </div>
+        <div class="cerrar-modal" id="cerrar-modal1">
+            X
+        </div>
+    </div>
+    <div class="modal-portafolio" id="modal-portafolio2">
+        <div class="modal-contenido">
+                <div class="img-info">
+                    <img src="img/cafeoslo.png" class="modal_img">
+                </div>
+                <div class="detalles-proyecto">
+                    <h2>Información del proyecto</h2>
+                    <div class="division"></div>
+                    <p class="cat">Categoria: <span>Página Web</span></p>
+                    <p class="cat">Cliente: <span>Curso Domestika</span></p>
+                    <p class="cat">Fecha del proyecto: <span>Enero 2021</span></p>
+                    <p class="cat">URL: <span><a href="https://miguelp11.github.io/CafeOslo/" target="_blank">Visitar</a></span></p>
+                    <h2>Detalles del Proyecto</h2>
+                    <div class="division"></div>
+                    <p class="descripcion">Página web responsiva creada como proyecto final del curso "Introduccion al desarrollo web con HTML y CSS". <br>
+                    Desarrollado con estrucutra <strong>HTML</strong>, <strong>CSS</strong> y <strong>Javascript</strong></p>
                 </div>
                 </div>
                 <div class="descripcion-proyecto">
                   
         </div>
-        <div class="cerrar-modal" id="cerrar-modal1">
+        <div class="cerrar-modal" id="cerrar-modal2">
             X
         </div>
     </div>
+
 
     <!-- Pie de pagina -->
     <footer class="pie-pagina">

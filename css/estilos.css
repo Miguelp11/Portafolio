@@ -252,6 +252,11 @@ img{
 .cat span{
     font-weight: normal;
 }
+.cat span a{
+    color: #0563BB;
+    text-decoration: none;
+    font-weight: bold;
+}
 .descripcion{
     font-size: 1.2rem;
     font-weight: normal;
@@ -322,6 +327,24 @@ img{
     width: 80px;
     height: 80px;
     border-radius: 10px;
+}
+.iconohtml5{
+    background-color: #DC5E29;
+    padding: 7px 0px;
+}
+.iconocss{
+    background-color: #377ABD;
+}
+.iconogit{
+    background-color: #DBDAD0;
+    padding: 5px;
+}
+.iconophp{
+    background-color: #8993BE;
+}
+.iconojava{
+    background-color: #EFEFEF;
+    padding: 5px 0px;
 }
 
 /* Seccion experiencia */
@@ -426,6 +449,19 @@ form .boton{
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: bold;
+}
+.btn{
+    display: inline-block;
+    background-color: #FE8228;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px auto 0px auto;
+    text-decoration: none;
+    color: #F1F6F8;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* Pie de pagina */
@@ -673,10 +709,12 @@ form .boton{
     .img-info{
         grid-column: 1/10;
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
     }
     .detalles-proyecto{
         grid-column: 10/13;
-        margin: 0;
+        margin: 20px 20px 20px 0px;
     }
     .detalles-proyecto h2{
         margin-top: 20px;

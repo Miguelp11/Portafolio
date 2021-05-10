@@ -30,7 +30,7 @@
 
 else {
 
-	echo "No se ha enviado ningún form";
+	echo "No se ha enviado nada chavo";
 
 }
 

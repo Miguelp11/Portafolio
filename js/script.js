@@ -28,21 +28,29 @@ var typed = new Typed('.animado', {
 // modal proyectos
 const modal= document.getElementById('modal-portafolio');
 const modal1= document.getElementById('modal-portafolio1');
+const modal2 =document.getElementById('modal-portafolio2')
 const botonModal= document.getElementById('cerrar-modal');
 const botonModal1= document.getElementById('cerrar-modal1');
+const botonModal2= document.getElementById('cerrar-modal2');
 const proyecto1= document.getElementById('proyecto1');
 const proyecto2= document.getElementById('proyecto2');
+const proyecto3 =document.getElementById('proyecto3');
 
 proyecto1.addEventListener('click', ()=>{
     modal.classList.add('abrir-modal');
 });
 proyecto2.addEventListener('click', ()=>{
     modal1.classList.add('abrir-modal');
-    
+});
+proyecto3.addEventListener('click', ()=>{
+    modal2.classList.add('abrir-modal');
 });
 botonModal.addEventListener('click',()=>{
     modal.classList.toggle('abrir-modal');
 });
 botonModal1.addEventListener('click',()=>{
     modal1.classList.toggle('abrir-modal');
+});
+botonModal2.addEventListener('click',()=>{
+    modal2.classList.toggle('abrir-modal');
 });
