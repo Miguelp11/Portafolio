@@ -317,7 +317,7 @@ img{
 .item1, .item4, .item7{
     grid-column: 1/5;
 }
-.item2, .item5{
+.item2, .item5, .item8{
     grid-column: 5/9;
 }
 .item3, .item6{
@@ -345,6 +345,10 @@ img{
 .iconojava{
     background-color: #EFEFEF;
     padding: 5px 0px;
+}
+.iconowp{
+    background-color: #EFEFEF;
+    padding: 5px;
 }
 
 /* Seccion experiencia */
@@ -610,7 +614,7 @@ form .boton{
     .item3, .item7{
         grid-column: 7/10;
     }
-    .item4{
+    .item4, .item8{
         grid-column: 10/13;
     }
     .contenedor-experiencia{
