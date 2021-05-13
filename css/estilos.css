@@ -315,6 +315,9 @@ img{
     text-align: center;
     color: #F5F0ED;
 }
+.item p{
+    margin-top: 5px;
+}
 .item1, .item4, .item7{
     grid-column: 1/5;
 }
@@ -328,6 +331,7 @@ img{
     width: 80px;
     height: 80px;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 .iconohtml5{
     background-color: #DC5E29;
@@ -596,6 +600,9 @@ form .boton{
     }
     .portafolio-3{
         grid-column: 8/11;
+    }
+    .portafolio-4{
+        grid-column: 2/5;
     }
     .detalles-proyecto h2{
         font-size: 1.8rem;
