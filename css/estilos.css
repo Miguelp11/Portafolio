@@ -750,6 +750,11 @@ form .boton{
         grid-template-columns: repeat(12,1fr);
         height: auto;
         overflow: initial;
+        margin-top: 6%;
+    }
+    .cerrar-modal{
+        top: 45px;
+        left: 25px;
     }
     .img-info{
         grid-column: 1/10;
@@ -802,5 +807,9 @@ form .boton{
     }
     .portafolio-info{
         font-size: 2rem;
+    }
+    .cerrar-modal{
+        top: 55px;
+        left: 35px;
     }
 }
