@@ -369,6 +369,20 @@ img{
     row-gap: 20px;
     margin-top: 40px;
 }
+.curriculum{
+    margin-top: 25px;
+}
+.cv{
+    text-decoration: none;
+    background-color: #0563BB;
+    color: #EFEFEF;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.cv:hover{
+    text-decoration: underline;
+}
 .item-experiencia{
     text-align: center;
 }
@@ -376,17 +390,23 @@ img{
     color: #4b4c4d;
     font-size: 1.2rem;
 }
+.item-experiencia small{
+    font-size: .8rem;
+}
+.item-experiencia span{
+    font-size: 1rem;
+}
 .img-experiencia{
     width: 150px;
     height: 150px;
     background-color: #fff;
     border: 5px solid #0563BB;
-    border-radius: 20px;
+    border-radius: 0px;
     cursor: pointer;
     transition: .5s all;
 }
 .img-experiencia:hover{
-    border-radius: 0px;
+    border-radius: 20px;
 }
 
 /* Seccion contacto */
@@ -549,6 +569,12 @@ form .boton{
     .item-experiencia p{
         font-size: 1.4rem;
     }
+    .item-experiencia small{
+        font-size: 1rem;
+    }
+    .item-experiencia span{
+        font-size: 1.2rem;
+    }
     .detalles-proyecto h2{
         font-size: 1.6rem;
     }
@@ -634,6 +660,13 @@ form .boton{
     }
     .item-experiencia2{
         grid-column: 8/11;
+    }
+    .curriculum{
+        grid-column: 6/8;
+        text-align: center;
+    }
+    .cv{
+        font-size: 1.4rem;
     }
     form{
         width: 640px;
@@ -740,11 +773,20 @@ form .boton{
     .item-experiencia p{
         font-size: 2rem;
     }
+    .item-experiencia small{
+        font-size: 1.2rem;
+    }
+    .item-experiencia span{
+        font-size: 1.4rem;
+    }
     .item-experiencia1{
         grid-column: 4/7;
     }
     .item-experiencia2{
         grid-column: 7/10;
+    }
+    .cv{
+        font-size: 1.6rem;
     }
     form{
         width: 1000px;
