@@ -415,10 +415,14 @@ img{
     padding: 50px 0px;
 }
 .contenedor-contacto{
-    margin-top: 40px;
+    margin: 40px 0px;
     text-align: center;
 }
-.contenedor-contacto .fab{
+.contacto-icono p{
+    color: #F5F0ED;
+    margin-top: 5px;
+}
+.contenedor-contacto .fab, .contenedor-contacto .fas{
     font-size: 2.9rem;
     margin-right: 10px;
     margin-top: 30px;
@@ -429,68 +433,13 @@ img{
     color: #35BED9;
 }
 .contenedor-contacto .fa-github:hover{
-    color: #F05134;
+    color: #E68945;
 }
-form{
-    width: 280px;
-    text-align: center;
-    border: 1px solid #fff;
-    padding: 20px 0px;
-    margin: 0 auto;
-    border-radius: 10px;
+.contenedor-contacto .fa-envelope-square:hover{
+    color: #E34133;
 }
-input[type="text"]{
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    height: 40px;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-    font-size: 1.2rem;
-}
-input[type="email"],textarea{
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    height: 40px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    resize: none;
-}
-textarea{
-    height: 60px;
-}
-label{
-    display: block;
-    color: #F1F6F8;
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-form .boton{
-    display: block;
-    background-color: #FE8228;
-    border: none;
-    color: #F1F6F8;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin: 20px auto 0px auto;
-    cursor: pointer;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.btn{
-    display: inline-block;
-    background-color: #FE8228;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 20px auto 0px auto;
-    text-decoration: none;
-    color: #F1F6F8;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.contenedor-contacto .fa-facebook:hover{
+    color: #0a0a0a;
 }
 
 /* Pie de pagina */
@@ -533,9 +482,6 @@ form .boton{
     }
     .portafolio-info{
         font-size: 1.6rem;
-    }
-    form{
-        width: 340px;
     }
 }
 
@@ -584,11 +530,19 @@ form .boton{
     .descripcion{
         font-size: 1.4rem;
     }
-    form{
-        width: 430px;
+    .contenedor-contacto{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
     }
-    input[type="text"],input[type="email"],textarea{
-        font-size: 1.4rem;
+    .contacto-icono{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .contacto-icono:nth-child(odd){
+        grid-column: 4/6;
+    }
+    .contacto-icono:nth-child(even){
+        grid-column: 8/10;
     }
     .pie-pagina{
         font-size: 1.4rem;
@@ -668,13 +622,7 @@ form .boton{
     .cv{
         font-size: 1.4rem;
     }
-    form{
-        width: 640px;
-    }
-    input[type="text"],input[type="email"],textarea{
-        height: 50px;
-    }
-    .contenedor-contacto .fab{
+    .contenedor-contacto .fab, .contenedor-contacto .fas{
         font-size: 3.5rem;
     }
     .pie-pagina span{
@@ -793,11 +741,23 @@ form .boton{
     .cv{
         font-size: 1.6rem;
     }
-    form{
-        width: 1000px;
-    }
-    .contenedor-contacto .fab{
+    .contenedor-contacto .fab, .contenedor-contacto .fas{
         font-size: 4rem;
+    }
+    .contacto-icono{
+        font-size: 1.4rem;
+    }
+    .contacto-icono:nth-child(1){
+        grid-column: 3/5;
+    }
+    .contacto-icono:nth-child(2){
+        grid-column: 5/7;
+    }
+    .contacto-icono:nth-child(3){
+        grid-column: 7/9;
+    }
+    .contacto-icono:nth-child(4){
+        grid-column: 9/11;
     }
 }
 @media screen and (min-width:1224px){
