@@ -28,6 +28,33 @@ var typed = new Typed('.animado', {
     loop: true
  });
 
+//Indicador de menu 1024px
+const secciones =document.querySelectorAll('.seccion');
+const itemsMenu = document.querySelectorAll('.menu-item');
+
+const funcionObservar = (entradas) =>{
+    entradas.forEach(entrada => {
+        if(entrada.isIntersecting){
+            const itemAcutal = Array.from(itemsMenu).find(item => item.dataset.url === entrada.target.id);
+            itemAcutal.classList.add('activo');
+            for (const item of itemsMenu) {
+                if (item != itemAcutal){
+                    item.classList.remove('activo');
+                }
+            }
+        }
+    });
+}
+
+const observer = new IntersectionObserver(funcionObservar, {
+    root: null,
+    rootMargin: '-50px',
+    threshold: 0.5
+});
+
+secciones.forEach(seccion => observer.observe(seccion))
+
+
 // modal proyectos
 const modal= document.querySelectorAll('.modal-portafolio');
 const botonModal= document.querySelectorAll('.cerrar-modal');

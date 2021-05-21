@@ -45,6 +45,9 @@ img{
     color: #fff;
     font-size: 1.7rem;
 }
+.menu li:nth-child(1){
+    display: none;
+}
 .menu-hamburguesa{
     display: flex;
     background-color: #0563BB;
@@ -638,7 +641,7 @@ img{
         box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.76);
     }
     .logo1{
-        display: block;
+        display: inline-block;
         font-size: 2.8rem;
         height: 50px;
     }
@@ -665,14 +668,18 @@ img{
     }
     .menu li a{
         display: inline-block;
-        height: 50px;
-        margin-top: 3px;
-        padding: 10px 5px 0px 5px;
+        height: 55px;
+        padding: 15px 5px 0px 5px;
         transition: .5s all;
     }
     .menu li a:hover{
         background-color: #F5F0ED;
         color: #4b4c4d;
+    }
+    .activo{
+        background-color: rgba(0,0,0,0.3);
+        transition: .4s;
+        margin-top: 3px;
     }
     .contenido p:nth-child(1){
         font-size: 3.6rem;
