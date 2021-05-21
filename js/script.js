@@ -1,5 +1,12 @@
-//inicializar wow
+//inicializar aos
 AOS.init();
+
+// Pantalla de carga
+addEventListener('load',()=>{
+    const contenedor = document.querySelector('.contenedor-carga');
+    contenedor.style.opacity=0;
+    contenedor.style.visibility= 'hidden';
+})
 
 // menu
 const menu = document.getElementById("menu");
