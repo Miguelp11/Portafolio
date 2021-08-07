@@ -635,20 +635,14 @@ img{
     .portafolio-info{
         font-size: 1.4rem;
     }
-    .portafolio-1{
+    .portafolio-1, .portafolio-4{
         grid-column: 2/5;
     }
-    .portafolio-2{
+    .portafolio-2, .portafolio-5{
         grid-column: 5/8;
     }
-    .portafolio-3{
+    .portafolio-3, .portafolio-6{
         grid-column: 8/11;
-    }
-    .portafolio-4{
-        grid-column: 2/5;
-    }
-    .portafolio-5{
-        grid-column: 5/8;
     }
     .detalles-proyecto h2{
         font-size: 1.8rem;
