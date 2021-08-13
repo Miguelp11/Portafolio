@@ -635,13 +635,13 @@ img{
     .portafolio-info{
         font-size: 1.4rem;
     }
-    .portafolio-1, .portafolio-4{
+    .portafolio-3, .portafolio-6{
         grid-column: 2/5;
     }
     .portafolio-2, .portafolio-5{
         grid-column: 5/8;
     }
-    .portafolio-3, .portafolio-6{
+    .portafolio-1, .portafolio-4{
         grid-column: 8/11;
     }
     .detalles-proyecto h2{
@@ -769,13 +769,13 @@ img{
         left: 25px;
     }
     .img-info{
-        grid-column: 1/10;
+        grid-column: 1/9;
         margin-bottom: 20px;
         display: flex;
         align-items: center;
     }
     .detalles-proyecto{
-        grid-column: 10/13;
+        grid-column: 9/13;
         margin: 20px 20px 20px 0px;
     }
     .detalles-proyecto h2{
